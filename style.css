@@ -1,6 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
 .header, .footer {
@@ -48,7 +50,7 @@ div[class^="card_"], div[class*="card_"] {
 }
 .card_1{
     background-color: #1F2937;  
-    color: white;
+    
 }
 .card_2{
     background-color: white;  
@@ -58,4 +60,25 @@ div[class^="card_"], div[class*="card_"] {
 }
 .card_4{
     background-color: white;  
+}
+
+.section-header {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.sub-section-header {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
 }
