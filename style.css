@@ -45,21 +45,52 @@ body {
     
 }
 
+.bottom-block {
+    background-color: #3882f6;
+    padding-top: 24px ;
+    padding-bottom: 24px ;
+    padding-left: 48px ;
+    padding-right: 48px ;
+    margin: 48px;
+    color: white;
+    display: flex;
+    flex-shrink: auto;
+    justify-content: space-between;
+    gap: 48px;
+    align-items: center;
+   
+}
+
 div[class^="card_"], div[class*="card_"] {
     height: auto;
 }
 .card_1{
     background-color: #1F2937;  
-    
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 48px;
 }
 .card_2{
     background-color: white;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-size: 24px;
+    font-weight: 700;
 }
 .card_3{
-    background-color: #E5E7EB;  
+    background-color: #e5e7eb79;  
 }
 .card_4{
-    background-color: white;  
+    background-color: white; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
 }
 
 .section-header {
@@ -73,6 +104,25 @@ div[class^="card_"], div[class*="card_"] {
     color: #E5E7EB;
 }
 
+.split-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    gap: 6px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.split-right {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+
 .header-button {
     background-color: #3882f6;
     color: #f9faf8;
@@ -81,4 +131,57 @@ div[class^="card_"], div[class*="card_"] {
     font-weight: 700;
     border: none;
     border-radius: 8px;
+    width: 150px;
+}
+
+.bottom-button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    
+}
+
+.image-styled {
+    width: 150px;
+    height: auto;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+}
+
+.text-styled {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 48px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
 }
